@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+a {
+  color: rgb(0, 0, 0); /* or any color you want */
+  text-decoration: none;
+}
+
+.sidebar{
+    width:55px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #97969670;
+}
+
+.top{
+   
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 20px;
+    height: 20px;
+}
+.bottom{
+    margin-bottom: 30px;
+}
