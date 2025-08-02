@@ -1,50 +1,94 @@
 .search-container {
   display: flex;
   position: relative;
- 
+
   padding: 10px;
-  flex: 1;/*or we can use( width: 100%);
+  flex: 1;
+  /*or we can use( width: 100%);
 */
 
 }
-.search{
-    background-color: rgb(210, 204, 204);
-    width: 90%;
-   
-    color: black;
-    padding: 20px ;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+.search {
+  background-color: #e5e5e5;
+
+
+  width: 100%;
+
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-   .search-button {
+.search:hover {
+  background-color: #d1d1d5b4;
+}
+
+.search::placeholder {
+  font-size: 16px;
+}
+
+.search-button {
   position: absolute;
-  right: 130px;
+  right: 23px;
   top: 50%;
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
 
-.profile-img{
-  width: 40px;
-  height: 40px;
+.profile-img {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-left: 10px;
+  cursor: pointer;
 }
+
 .accounts {
   display: flex;
   align-items: center;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
 }
+
 .dropdown-img {
-  width: 30px;
+  width: 20px;
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.account {
+  z-index: 2;
+}
+
+.profile-name {
+ position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper:hover .profile-name {
+  opacity: 1;
 }
