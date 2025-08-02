@@ -1,0 +1,13 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.two{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
