@@ -4,6 +4,7 @@ import profile from "../../assets/profile.png";
 import dropdown from "../../assets/down-chevron.png";
 import 'font-awesome/css/font-awesome.min.css';
 import meme2 from "../../assets/meme2.jpeg";
+import qoute from "../../assets/qoute.jpeg"
 
 
 
@@ -47,7 +48,7 @@ const Navbar = () => {
             <div className="navbar">
 
 
- {/*-----------------------------Search div-----------------------------------------------------   */}
+                {/*-----------------------------Search div-----------------------------------------------------   */}
 
                 <div className="search-div">
 
@@ -77,16 +78,52 @@ const Navbar = () => {
                     </div>
 
 
-{/*----------------------------Suggestion imges------------------------------------------------------*/ }
+                    {/*----------------------------Suggestion imges------------------------------------------------------*/}
                     {display &&
 
                         <div>
 
                             <div className="suggestion-img">
 
-                                <div className="img1">
 
-                                    <img src={meme2} alt="no" className='meme2' /> <span>Meme</span>
+                                <div className="suggestion-container">
+
+
+                                    <div className="suggestion-heading">
+
+                                        <h2>Recent searches</h2>
+
+                                    </div>
+
+                                    <div className="img1">
+
+
+                                        <div className="img-meme2"><img src={meme2} alt="no" className='meme2' /> </div>
+
+                                        <div className="img-name"><h3>Memes</h3></div>
+
+
+                                    </div>
+
+                                    <div className="img2">
+
+
+
+                                        <div className="img-qoute">
+
+                                            <img src={qoute} alt="" className='qoute' />
+
+
+                                        </div>
+
+                                        <div className="img-name">
+
+                                            <h3>Quotes</h3>
+
+                                        </div>
+
+
+                                    </div>
 
                                 </div>
 
@@ -107,7 +144,7 @@ const Navbar = () => {
 
 
 
-    {/*------------------------------Acounts------------------------------------------------ */}            
+                {/*------------------------------Acounts------------------------------------------------ */}
 
                 <div className="accounts">
 

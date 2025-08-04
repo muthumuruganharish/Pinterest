@@ -93,22 +93,42 @@
   opacity: 1;
 }
 
-.meme2{
+.meme2,.qoute{
   width: 100px;
 }
 
 .suggestion-img{
   margin-top: -9px;
+  width: 92%;
+  height: 40%;
   position:absolute;
   z-index: 30;
   margin-left: 20px;
   border: 2px black solid;
+  display: flex;
+  justify-content: space-between;
 }
 .search-div{
  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.img1{
+.img1,.img2{
   margin-top:20px;
+  display: flex;
+}
+.img1{
+  margin-left: 20px;
+}
+
+.img2{
+  margin-right: 20px;
+}
+.img-name{
+  margin-left: 15px;
+}
+
+.suggestion-container{
+  display: flex;
+  flex-direction: column;
 }
