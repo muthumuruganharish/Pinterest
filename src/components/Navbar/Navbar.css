@@ -95,7 +95,15 @@
 
 .meme2,.qoute{
   width: 100px;
+  border-radius: 10px;
 }
+
+.profile2{
+  width: 90px;
+  border-radius: 10px;
+  
+}
+
 
 .suggestion-img{
   margin-top: -9px;
@@ -104,31 +112,65 @@
   position:absolute;
   z-index: 30;
   margin-left: 20px;
-  border: 2px black solid;
+ 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+ 
+  
 }
 .search-div{
  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.img1,.img2{
-  margin-top:20px;
+.img1,.img2,.img3{
+ 
   display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between image and text */
+  flex: 1;
+  background-color: #d1d1d5b4;
+    border-radius: 10px;
+    width: 100%;
+  max-width: 400px;
+  cursor: pointer;
 }
+
+
+
 .img1{
   margin-left: 20px;
+    background-color: #d1d1d5b4;
+    border-radius: 10px;
+
 }
+
 
 .img2{
   margin-right: 20px;
+  margin-left: 40px;
 }
 .img-name{
-  margin-left: 15px;
+  margin-left: 10px;
+ 
 }
 
 .suggestion-container{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  
 }
+.suggestion-heading{
+  margin-left: 20px;
+}
+
+.img-container{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+
+}
+
