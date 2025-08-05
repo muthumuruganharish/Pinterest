@@ -1,0 +1,92 @@
+.logo1{
+    width:100px;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.explore,.container2{
+    margin-top: 20px;
+}
+.explore button{
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.explore button:hover{
+     background-color: rgb(232, 228, 228);
+
+}
+.explore{
+    margin-top: 11px;
+}
+.container1{
+    justify-content: space-between;
+    width: 13%;
+    margin-left: 10px;
+}
+.container2{
+    display: flex;
+}
+
+.container1,.container2 ul{
+    display: flex;
+}
+
+.container2 ul{
+    display: flex;
+    justify-content: space-between;
+     width: 100%;
+     list-style: none;
+
+}
+.container2 ul li{
+    margin-right: 60px;
+    cursor: pointer;
+    color: #215d82;
+    font-size: 17px;
+    font-weight:700;
+    
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.login button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+.login button,.signup button{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.signup button{
+    background-color: #e0e0d9;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 16px;
+
+
+}
+.login, .signup {
+ 
+  margin-right: 20px;
+  margin-top: -5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+   
+}
