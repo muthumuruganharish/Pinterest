@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import meme2 from "../../assets/meme2.jpeg";
 import qoute from "../../assets/qoute.jpeg"
 import profile2 from "../../assets/profile.jpeg"
-import wallpaper from"../../assets/wallpaper.jpeg"
+import wallpaper from "../../assets/wallpaper.jpeg"
 import aesthetic from "../../assets/aesthetic.jpeg"
 import movie from "../../assets/movie.jpeg"
 
@@ -51,45 +51,95 @@ const Navbar = () => {
         <>
             <div className="navbar">
 
+                <div className="common-div">
 
-                {/*-----------------------------Search div-----------------------------------------------------   */}
+                    {/*-----------------------------Search div-----------------------------------------------------   */}
 
-                <div className="search-div">
+                    <div className="search-div">
 
-                    <div className="search-container" ref={ref1}>
+                        <div className="search-container" ref={ref1}>
 
 
-                        <input type="text" placeholder="🔍︎ Search..." className='search' onClick={() => setDisplay(true)} //(1) when the search bar is clicked the useState becomes true
+                            <input type="text" placeholder="🔍︎ Search..." className='search' onClick={() => setDisplay(true)} //(1) when the search bar is clicked the useState becomes true
 
-                            onFocus={(e) => {
-                                e.target.placeholder = "Search...";
-                            }}
+                                onFocus={(e) => {
+                                    e.target.placeholder = "Search...";
+                                }}
 
-                            onBlur={(e) => {
+                                onBlur={(e) => {
 
-                                e.target.placeholder = "🔍︎ Search..."
-                            }}
+                                    e.target.placeholder = "🔍︎ Search..."
+                                }}
 
-                        />
+                            />
 
-                        <button className="search-button">
-                            →
+                            <button className="search-button">
+                                →
 
-                        </button>
+                            </button>
+
+
+
+                        </div>
+
+
+
+
 
 
 
                     </div>
 
 
-                    {/*----------------------------Suggestion imges------------------------------------------------------*/}
+
+                    {/*------------------------------Acounts------------------------------------------------ */}
+
+                    <div className="accounts">
+
+                        <div className="profile-container">
+                            <div className="img-wrapper">
+                                <img src={profile} alt="" className='profile-img' />
+
+                                <span className='profile-name'>Profile</span>
+                            </div>
+
+                        </div>
+
+                        <div className="dropdown">
+
+                            <div className="img-wrapper">
+
+                                <img src={dropdown} alt="" className='dropdown-img' />
+                                <span className='profile-name'>Accounts</span>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+             {/*----------------------------Suggestion imges------------------------------------------------------*/}
+
+                <div className="sug-div">
                     {display &&
 
                         <div>
 
                             <div className="suggestion-img">
 
-                                 {/*---------------- suggestion container1----------------  */}
+                                {/*---------------- suggestion container1----------------  */}
                                 <div className="suggestion-container">
 
 
@@ -232,43 +282,13 @@ const Navbar = () => {
                         </div>
                     }
 
-
-
-
-
                 </div>
 
-
-
-                {/*------------------------------Acounts------------------------------------------------ */}
-
-                <div className="accounts">
-
-                    <div className="profile-container">
-                        <div className="img-wrapper">
-                            <img src={profile} alt="" className='profile-img' />
-
-                            <span className='profile-name'>Profile</span>
-                        </div>
-
-                    </div>
-
-                    <div className="dropdown">
-
-                        <div className="img-wrapper">
-
-                            <img src={dropdown} alt="" className='dropdown-img' />
-                            <span className='profile-name'>Accounts</span>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
 
             </div>
+
+
+            hello
 
 
 
