@@ -59,8 +59,14 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
+.common-div{
+   display: flex;
+  justify-content: space-between;
 
+}
 .dropdown-img {
   width: 20px;
   margin-left: 10px;
@@ -104,17 +110,22 @@
   
 }
 
+.sug-div{
+  background-color: red;
+}
+
 
 .suggestion-img{
   margin-top: -9px;
   width: 92%;
-  height: 40%;
+  height: auto;
   position:absolute;
   z-index: 30;
   margin-left: 20px;
  
   display: flex;
   flex-direction: column;
+  background-color: blue;
  
   
 }
@@ -124,6 +135,9 @@
   flex-direction: column;
 }
 .img1,.img2,.img3{
+
+  flex: 1 1 calc(33.33% - 20px); /* responsive 3 per row */
+  min-width: 200px; /* prevent too small */
  
   display: flex;
   align-items: center;
@@ -139,21 +153,24 @@
 
 
 .img1{
-  margin-left: 20px;
+  
     background-color: #d1d1d5b4;
     border-radius: 10px;
 
 }
 
 
-.img2{
-  margin-right: 20px;
-  margin-left: 40px;
-}
 .img-name{
   margin-left: 10px;
  
 }
+.img-container {
+  gap: 20px; /* spacing between all items */
+  padding: 0 20px;
+    flex-wrap: wrap; 
+     box-sizing: border-box;/*  Keeps total size fixed even with padding & border */
+}
+
 
 .suggestion-container{
   display: flex;
@@ -170,7 +187,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: nowrap;
+  
 
 }
 
