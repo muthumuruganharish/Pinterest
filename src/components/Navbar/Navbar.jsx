@@ -202,7 +202,7 @@ const Navbar = () => {
                                 </div>
 
 
-                                {/*---------------- suggestion container2----------------  */}
+                                {/*---------------- suggestion container2---------------  */}
                                 <div className="suggestion-container2">
 
 
