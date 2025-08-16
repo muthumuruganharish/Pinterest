@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../assets/Logo.png"
+import logo from "../../assets/pinterest-Logo.png"
 import "./Navbar_login.css"
 
 const Navbar_login = () => {
