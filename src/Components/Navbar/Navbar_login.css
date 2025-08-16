@@ -1,92 +1,85 @@
-.logo1{
-    width:100px;
-   
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px; 
+  flex-wrap: wrap; 
 }
-*{
-    margin: 0;
-    padding: 0;
+
+.container1 {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
 }
-.explore,.container2{
-    margin-top: 20px;
+
+.logo1 {
+  width: 80px;
+  height: auto;
 }
-.explore button{
-    border: none;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 19px;
-    font-weight: bold;
-    font-size: 15px;
+
+.explore button {
+  border: none;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 19px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
 }
 .explore button:hover{
-     background-color: rgb(232, 228, 228);
 
-}
-.explore{
-    margin-top: 11px;
-}
-.container1{
-    justify-content: space-between;
-    width: 13%;
-    margin-left: 10px;
-}
-.container2{
-    display: flex;
-}
-
-.container1,.container2 ul{
-    display: flex;
-}
-
-.container2 ul{
-    display: flex;
-    justify-content: space-between;
-     width: 100%;
-     list-style: none;
-
-}
-.container2 ul li{
-    margin-right: 60px;
-    cursor: pointer;
-    color: #215d82;
-    font-size: 17px;
-    font-weight:700;
+    background-color: #e0e0d9;
     
 }
 
-
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-   
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
 }
 
-.login button{
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 20px;
-}
-.login button,.signup button{
-    font-weight: 500;
-    font-size: 17px;
+.container2 ul {
+  display: flex;
+  gap: 20px; 
+  list-style: none;
 }
 
-.signup button{
-    background-color: #e0e0d9;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 16px;
-
-
+.container2 ul li {
+  cursor: pointer;
+  color: #215d82;
+  font-size: 16px;
+  font-weight: 700;
 }
-.login, .signup {
- 
-  margin-right: 20px;
-  margin-top: -5px;
+
+.buttons {
+  display: flex;
+  gap: 10px;
 }
-.buttons{
-    display: flex;
-    justify-content: space-between;
-   
+
+.login button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+.signup button {
+  background-color: #e0e0d9;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .container2 ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
