@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ img{
+   
+    width:69%;
+   
+ }
+
+.login-div{
+   
+    display: flex;
+
+   
+}
+.main-div{
+    display: flex;
+    gap: 40px;
+   
+}
