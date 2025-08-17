@@ -3,6 +3,9 @@ import "./Navbar.css";
 import profile from "../../assets/profile.png";
 import dropdown from "../../assets/down-chevron.png";
 import 'font-awesome/css/font-awesome.min.css';
+import { Link } from "react-router-dom";
+
+
 import meme2 from "../../assets/meme2.jpeg";
 import qoute from "../../assets/qoute.jpeg"
 import profile2 from "../../assets/profile.jpeg"
@@ -98,8 +101,10 @@ const Navbar = () => {
 
                         <div className="profile-container">
                             <div className="img-wrapper">
+                                <Link to="/Login" >  
                                 <img src={profile} alt="" className='profile-img' />
-
+                               
+                                    </Link>
                                 <span className='profile-name'>Profile</span>
                             </div>
 
