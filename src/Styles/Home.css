@@ -2,12 +2,63 @@
 .main{
     display: flex;
     flex-direction: row;
+    
 }
+.one{
+    position: fixed; 
+    flex-shrink: 0;
+    width: 55px;
+    min-height: 100vh;
+
+  }
 
 .two{
+    margin-left: 60px;
+    overflow: auto;
     flex-grow: 2;
     display: flex;
     flex-direction: column;
-    
+    overflow-y: scroll; /* still scrollable */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /
 }
 
+
+
+.pinterest-grid {
+  column-count: 4;       /* Number of columns */
+  column-gap: 16px;      /* Space between columns */
+  padding: 20px;
+}
+
+.pinterest-item {
+  break-inside: avoid;   
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.pinterest-item img {
+  width: 100%;           /* Take full column width */
+  height: auto;          /* Dynamic height (keeps aspect ratio) */
+  display: block;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .pinterest-grid {
+    column-count: 3;
+  }
+}
+@media (max-width: 768px) {
+  .pinterest-grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .pinterest-grid {
+    column-count: 1;
+  }
+}
